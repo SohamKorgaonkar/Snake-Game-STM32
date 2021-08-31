@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Soham Korgaonkar, VIT University, LIC=RC930-BWZSK-LQR0Q-NWYQS-MQ36G-1Z07P
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\Microcontroller_Codes\ARM\NewARM\SnakeGit\Snake-Game-STM32\MDK-ARM\Snake_test.uvprojx
+Project File Date:  08/25/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Snake_test'
+assembling startup_stm32f407xx.s...
+compiling main.c...
+../Inc/ssd1306.h(65): warning:  #1295-D: Deprecated declaration SSD1306_ClearScreen - give arg types
+  void SSD1306_ClearScreen();
+../Src/main.c(283): warning:  #188-D: enumerated type mixed with another type
+  			ssd1306_DrawPixel(i,j,0x01);
+../Src/main.c(294): warning:  #188-D: enumerated type mixed with another type
+  			ssd1306_DrawPixel(i,j,0x01);
+../Src/main.c(306): warning:  #188-D: enumerated type mixed with another type
+  			ssd1306_DrawPixel(i,j,0x00);
+../Src/main.c(452): warning:  #188-D: enumerated type mixed with another type
+  	ssd1306_WriteString("Game Over", Font_11x18, 0x01);
+../Src/main.c(454): warning:  #188-D: enumerated type mixed with another type
+  	ssd1306_WriteString("Score: ", Font_11x18, 0x01);
+../Src/main.c(457): warning:  #188-D: enumerated type mixed with another type
+  	ssd1306_WriteChar(sc1, Font_11x18,0x01);
+../Src/main.c: 7 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling fonts.c...
+compiling ssd1306.c...
+../Inc/ssd1306.h(65): warning:  #1295-D: Deprecated declaration SSD1306_ClearScreen - give arg types
+  void SSD1306_ClearScreen();
+..\Src\ssd1306.c(228): warning:  #188-D: enumerated type mixed with another type
+              if(byte & 0x80) ssd1306_DrawPixel(x+i, y, color);
+..\Src\ssd1306.c(239): warning:  #188-D: enumerated type mixed with another type
+  			ssd1306_DrawPixel(i,j,0);
+..\Src\ssd1306.c(242): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\ssd1306.c: 4 warnings, 0 errors
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling retarget_io.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_exti.c...
+linking...
+Program Size: Code=6092 RO-data=3868 RW-data=72 ZI-data=2808  
+FromELF: creating hex file...
+"Snake_test\Snake_test.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDERR Variant: ITM Version: 1.2.0
+   * Component: STDIN Variant: ITM Version: 1.2.0
+   * Component: STDOUT Variant: ITM Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Snake_test
+  C:\Users\soham\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\soham\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDERR:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDIN:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+Build Time Elapsed:  00:00:20
+</pre>
+</body>
+</html>
